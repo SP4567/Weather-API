@@ -6,7 +6,7 @@ from dicttoxml import dicttoxml
 
 app = FastAPI(title="Weather API using RapidAPI")
 
-RAPID_API_KEY = "69ecb9aaefmshdc348cfda885ac1p18b9d7jsn8a16d0072e1f"
+RAPID_API_KEY = "place_your_api_key"
 RAPID_API_HOST = "weatherapi-com.p.rapidapi.com"
 WEATHER_URL = "https://weatherapi-com.p.rapidapi.com/current.json"
 
@@ -78,3 +78,4 @@ def get_weather(data: WeatherRequest):
         status_code=400,
         detail="output_format must be 'json' or 'xml'",
     )
+
